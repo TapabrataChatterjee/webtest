@@ -23,6 +23,11 @@ public class LandingPage
 
     }
 
+    public String getTitle()
+    {
+        return webDriver.getTitle();
+    }
+
     public void pageLogin()
     {
         webDriver.findElement(link_Login).click();

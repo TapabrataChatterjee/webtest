@@ -1,27 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test Failed]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-03-11T14:56:21 EST" name="Suite" finished-at="2022-03-11T14:56:47 EST" duration-ms="25898">
+  <suite started-at="2022-03-12T10:02:19 EST" name="Suite" finished-at="2022-03-12T10:02:57 EST" duration-ms="38492">
     <groups>
     </groups>
-    <test started-at="2022-03-11T14:56:21 EST" name="Test" finished-at="2022-03-11T14:56:47 EST" duration-ms="25898">
+    <test started-at="2022-03-12T10:02:19 EST" name="Test" finished-at="2022-03-12T10:02:57 EST" duration-ms="38492">
       <class name="com.MainTests">
-        <test-method is-config="true" signature="testPrep()[pri:0, instance:com.MainTests@2b91004a]" started-at="2022-03-11T14:56:21 EST" name="testPrep" finished-at="2022-03-11T14:56:45 EST" duration-ms="23852" status="PASS">
+        <test-method is-config="true" signature="testPrep()[pri:0, instance:com.MainTests@221a3fa4]" started-at="2022-03-12T10:02:19 EST" name="testPrep" finished-at="2022-03-12T10:02:57 EST" duration-ms="38116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPrep -->
-        <test-method signature="test1()[pri:0, instance:com.MainTests@2b91004a]" started-at="2022-03-11T14:56:45 EST" name="test1" finished-at="2022-03-11T14:56:46 EST" duration-ms="1789" status="PASS">
+        <test-method signature="test1()[pri:0, instance:com.MainTests@221a3fa4]" started-at="2022-03-12T10:02:57 EST" name="test1" finished-at="2022-03-12T10:02:57 EST" duration-ms="64" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [google.com] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [google.com] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.MainTests.test1(MainTests.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Test Failed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="testClose()[pri:0, instance:com.MainTests@2b91004a]" started-at="2022-03-11T14:56:46 EST" name="testClose" finished-at="2022-03-11T14:56:46 EST" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="testClose()[pri:0, instance:com.MainTests@221a3fa4]" started-at="2022-03-12T10:02:57 EST" name="testClose" finished-at="2022-03-12T10:02:57 EST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClose -->
       </class> <!-- com.MainTests -->
       <class name="com.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.AppTest@37d4349f]" started-at="2022-03-11T14:56:47 EST" name="shouldAnswerWithTrue" finished-at="2022-03-11T14:56:47 EST" duration-ms="5" status="PASS">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.AppTest@6b695b06]" started-at="2022-03-12T10:02:57 EST" name="shouldAnswerWithTrue" finished-at="2022-03-12T10:02:57 EST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
