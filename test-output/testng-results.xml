@@ -1,41 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Test Failed]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-03-12T10:02:19 EST" name="Suite" finished-at="2022-03-12T10:02:57 EST" duration-ms="38492">
+  <suite started-at="2022-03-12T11:26:34 EST" name="Default suite" finished-at="2022-03-12T11:26:34 EST" duration-ms="48">
     <groups>
     </groups>
-    <test started-at="2022-03-12T10:02:19 EST" name="Test" finished-at="2022-03-12T10:02:57 EST" duration-ms="38492">
+    <test started-at="2022-03-12T11:26:34 EST" name="Default test" finished-at="2022-03-12T11:26:34 EST" duration-ms="48">
       <class name="com.MainTests">
-        <test-method is-config="true" signature="testPrep()[pri:0, instance:com.MainTests@221a3fa4]" started-at="2022-03-12T10:02:19 EST" name="testPrep" finished-at="2022-03-12T10:02:57 EST" duration-ms="38116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPrep -->
-        <test-method signature="test1()[pri:0, instance:com.MainTests@221a3fa4]" started-at="2022-03-12T10:02:57 EST" name="test1" finished-at="2022-03-12T10:02:57 EST" duration-ms="64" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="test1(java.lang.String,boolean)[pri:0, instance:com.MainTests@1af2d44a]" started-at="2022-03-12T11:26:34 EST" name="test1" data-provider="getData" finished-at="2022-03-12T11:26:34 EST" duration-ms="15" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[expected [google.com] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]]]>
+              <![CDATA[Cannot invoke "java.util.List.contains(Object)" because the return value of "java.util.Map.get(Object)" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [google.com] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.MainTests.test1(MainTests.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.List.contains(Object)" because the return value of "java.util.Map.get(Object)" is null
+at org.testng.internal.reflect.ReflectionRecipes.isInstanceOf(ReflectionRecipes.java:75)
+at org.testng.internal.reflect.ReflectionRecipes.exactMatch(ReflectionRecipes.java:255)
+at org.testng.internal.reflect.ReflectionRecipes.exactMatch(ReflectionRecipes.java:240)
+at org.testng.internal.reflect.DirectMethodMatcher.match(DirectMethodMatcher.java:33)
+at org.testng.internal.reflect.AbstractNodeMethodMatcher.hasConformance(AbstractNodeMethodMatcher.java:25)
+at org.testng.internal.reflect.AbstractMethodMatcher.conforms(AbstractMethodMatcher.java:25)
+at org.testng.internal.reflect.DataProviderMethodMatcher.hasConformance(DataProviderMethodMatcher.java:20)
+at org.testng.internal.reflect.AbstractMethodMatcher.conforms(AbstractMethodMatcher.java:25)
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:34)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:886)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -58,24 +47,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-            <line>
-              <![CDATA[Test Failed]]>
-            </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="testClose()[pri:0, instance:com.MainTests@221a3fa4]" started-at="2022-03-12T10:02:57 EST" name="testClose" finished-at="2022-03-12T10:02:57 EST" duration-ms="241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testClose -->
       </class> <!-- com.MainTests -->
-      <class name="com.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.AppTest@6b695b06]" started-at="2022-03-12T10:02:57 EST" name="shouldAnswerWithTrue" finished-at="2022-03-12T10:02:57 EST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldAnswerWithTrue -->
-      </class> <!-- com.AppTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 12 10:02:19 EST 2022</td>
+<td>Started on:</td><td>Sat Mar 12 11:05:24 EST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38492 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (72 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,35 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.MainTests.test1()'><b>test1</b><br>Test class: com.MainTests<br/>
-<a href="#Output-1850301256" onClick='toggleBox("Output-1850301256", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1850301256" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1850301256">
-Test Failed<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [google.com] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]
-	at com.MainTests.test1(MainTests.java:31)
+<td title='com.MainTests.test1()'><b>test1</b><br>Test class: com.MainTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Method public void com.MainTests.test1(java.lang.String,boolean) throws java.io.IOException requires a @DataProvider named : getData
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1850301256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1850301256'><pre>java.lang.AssertionError: expected [google.com] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.MainTests.test1(MainTests.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace672746064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace672746064'><pre>org.testng.TestNGException: 
+Method public void com.MainTests.test1(java.lang.String,boolean) throws java.io.IOException requires a @DataProvider named : getData
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:516)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:739)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)

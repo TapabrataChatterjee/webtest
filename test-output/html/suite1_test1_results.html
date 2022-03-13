@@ -12,7 +12,7 @@
 <body>
 <h1>Test</h1>
 <p>
-  Test duration: 38.424s
+  Test duration: 0.005s
 </p>
 
 
@@ -28,34 +28,22 @@
                   test1
       </td>
   <td class="duration">
-    0.064s
+    0.000s
   </td>
   <td class="result">
         
     
-            <div class="testOutput">
-                        Test Failed<br />
-                  </div>
-    
+        
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [google.com] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.testng.TestNGException: <br/>
+Method public void com.MainTests.test1(java.lang.String,boolean) throws java.io.IOException requires a @DataProvider named : getData</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:110)<br />
-              org.testng.Assert.failNotEquals(Assert.java:1413)<br />
-              org.testng.Assert.assertEqualsImpl(Assert.java:149)<br />
-              org.testng.Assert.assertEquals(Assert.java:131)<br />
-              org.testng.Assert.assertEquals(Assert.java:655)<br />
-              org.testng.Assert.assertEquals(Assert.java:665)<br />
-              com.MainTests.test1(MainTests.java:31)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)<br />
-              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:567)<br />
-              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
-              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
-              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
-              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
-              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.Parameters.findDataProvider(Parameters.java:516)<br />
+              org.testng.internal.Parameters.handleParameters(Parameters.java:739)<br />
+              org.testng.internal.Parameters.handleParameters(Parameters.java:704)<br />
+              org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)<br />
+              org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)<br />
               org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
               org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
               org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
@@ -92,7 +80,7 @@
                   shouldAnswerWithTrue
       </td>
   <td class="duration">
-    0.003s
+    0.005s
   </td>
   <td class="result">
         
