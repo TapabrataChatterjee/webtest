@@ -42,7 +42,7 @@ public class BaseTest {
                 System.setProperty("webdriver.gecko.driver", "/Users/Anindita/geckodriver 2");
                 FirefoxOptions options = new FirefoxOptions();
                 options.addArguments("headless");
-                driver=new RemoteWebDriver(new URL("http://13.137.172.118:4444"),options);
+                driver=new RemoteWebDriver(new URL("http://3.137.172.118:4444"),options);
              //   driver = new FirefoxDriver();
                 driver.get("https://google.com");
                 break;
