@@ -37,12 +37,12 @@ public class BaseTest {
             case "chrome": {
                 
                 System.setProperty("webdriver.chrome.driver", "/Users/Anindita/chromedriver_mac");
-             //   ChromeOptions options = new ChromeOptions();
-              //  options.addArguments("headless");
-                driver=new ChromeDriver();
-                DevTools devDriver = driver.getDevTools();
-                devDriver.createSession();
-                devDriver.send(Emulation.setDeviceMetricsOverride(400, 489, 50, true, Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty()));
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("headless");
+                driver=new ChromeDriver(options);
+            //    DevTools devDriver = driver.getDevTools();
+            //    devDriver.createSession();
+            //    devDriver.send(Emulation.setDeviceMetricsOverride(400, 489, 50, true, Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty()));
                 System.out.println("Chrome driver selected" + driver);
                 break;
             }
