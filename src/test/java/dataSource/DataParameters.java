@@ -14,8 +14,8 @@ public class DataParameters
 
         data[0][0]="Tapa";
         data[0][1]="False";
-        data[1][0]="Chatterjee";
-        data[1][1]="True";
+    //    data[1][0]="Chatterjee";
+     //   data[1][1]="True";
 
         return data;
 
